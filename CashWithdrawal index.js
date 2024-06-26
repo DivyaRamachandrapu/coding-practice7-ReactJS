@@ -13,31 +13,32 @@ class CashWithdrawal extends Component {
     this.setState(prevState => ({balance: prevState.balance - value}))
   }
 
-  rednder() {
+  render() {
     const {denominationsList} = this.props
-    const {balance} = this.State
+    const {balance} = this.state
     const name = 'Sarah Williams'
     const initial = name.slice(0, 1)
 
     return (
       <div className="app-container">
-        <div className="cash-withdrawal-card">
-          <div className="profile-section">
-            <div className="initial-section">
+        <div className="cash-withdrawal-container">
+          <div className="user-details-container">
+            <div className="initial-container">
               <p className="initial">{initial}</p>
             </div>
             <p className="name">{name}</p>
           </div>
 
           <div className="balance-container">
-            <p className="your-balance"> Your balance</p>
+            <p className="your-balance">Your Balance</p>
             <p className="balance">
-              {balance} <br /> <span className="currency">In rupees</span>
+              {balance} <br />
+              <span className="currency">In Rupees</span>
             </p>
           </div>
-          <h1 className="withdraw">Withdraw</h1>
-          <p className="choose-value">CHOOSE SUM(IN RUPEES)</p>
-          <ul className="denomination-list">
+          <p className="withdraw">Withdraw</p>
+          <p className="choose-sum">CHOOSE SUM(IN RUPEES)</p>
+          <ul className="denominations-list">
             {denominationsList.map(eachDenomination => (
               <DenominationItem
                 key={eachDenomination.id}
@@ -51,5 +52,4 @@ class CashWithdrawal extends Component {
     )
   }
 }
-
 export default CashWithdrawal

@@ -5,89 +5,79 @@
   height: 100vh;
 }
 
-.cash-withdrawal-card {
+.cash-withdrawal-container {
   background-color: #150b3e;
   width: 80%;
   border-radius: 16px;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 18px;
   padding-left: 18px;
-  max-width: 350px;
+  padding-right: 18px;
 }
-
-.profile-section {
+.user-details-container {
   display: flex;
 }
 
-.initial-section {
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-  background-color: #c7d2fe;
-  flex-direction: column;
+.initial-container {
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #c7d2fe;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
 }
 
 .initial {
   color: #7c3aed;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: Roboto;
+  font-family: 'Roboto';
+  font-size: 14px;
 }
 
 .name {
-  color: #c4c4c4;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: Roboto;
+  color: #d4d2db;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 .balance-container {
   display: flex;
-  flex-direction: space between;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.your-balance {
+  color: #585076;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
   margin-top: 4px;
 }
 
-your-balance {
-  color: #7c3aed;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: Roboto;
-}
-
-.balance {
-  color: #c4c4c4;
-  font-size: 35px;
-  font-weight: 500;
-  font-family: Roboto;
-}
-
 .currency {
-  color: #7c3aed;
-  font-size: 15ppx;
-  font-weight: 500;
-  font-family: Roboto;
+  color: #585076;
+  font-size: 12px;
+  font-weight: 500px;
 }
 
 .withdraw {
-  color: #c4c4c4;
-  font-size: 30px;
-  font-weight: 500;
-  font-family: Roboto;
+  color: #d4d2db;
+  font-family: 'Roboto';
+  font-size: 20px;
 }
 
-choose-value {
-  color: #7c3aed;
-  font-size: 35ppx;
-  font-weight: 500;
-  font-family: Roboto;
+.choose-sum {
+  color: #585076;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500px;
+  margin-bottom: 12px;
 }
 
-.denomination-list {
-  display: flex;
-  flex-direction: space-between;
-  flex-wrap: wrap;
+.denominations-list {
   padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

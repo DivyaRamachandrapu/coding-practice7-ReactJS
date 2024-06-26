@@ -1,0 +1,19 @@
+.denominationItem {
+  list-style-type: none;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.withdrawButton {
+  background-color: #585076;
+  color: #c7d2fe;
+  border: 2px solid #c7d2fe;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+  cursor: pointer;
+}
